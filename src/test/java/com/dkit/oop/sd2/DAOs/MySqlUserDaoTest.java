@@ -19,6 +19,7 @@ class MySqlUserDaoTest {
     @org.junit.jupiter.api.Test
     void findUserByUsernamePassword() throws DaoException {
         User user = IUserDao.findUserByUsernamePassword("cocozzaf","password");
+        assertNotNull(user);
         assertEquals("cocozzaf",user.getUsername());
         assertEquals("Frankie",user.getFirstName());
         assertEquals("Cocozza",user.getLastName());
