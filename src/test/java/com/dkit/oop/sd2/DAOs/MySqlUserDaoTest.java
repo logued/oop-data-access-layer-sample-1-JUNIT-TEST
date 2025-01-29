@@ -11,6 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MySqlUserDaoTest {
     UserDaoInterface IUserDao=null;
+
     @org.junit.jupiter.api.BeforeEach
     void setUp() {
         IUserDao = new MySqlUserDao();  // create the DAO class
@@ -18,13 +19,14 @@ class MySqlUserDaoTest {
 
     @org.junit.jupiter.api.Test
     void findUserByUsernamePassword() throws DaoException {
+        // call method in DAO to test it
         User user = IUserDao.findUserByUsernamePassword("cocozzaf","password");
-        assertNotNull(user);
+        assertNotNull(user);    // check that it did not return null
+        // check if username retrieved matches the expected value ("cocozzaf")
         assertEquals("cocozzaf",user.getUsername());
         assertEquals("Frankie",user.getFirstName());
         assertEquals("Cocozza",user.getLastName());
         assertEquals("password",user.getPassword());
-        assertEquals(3,user.getId());
-
+        assertEquals(3,user.getId());  // check that userId is 3
     }
 }
