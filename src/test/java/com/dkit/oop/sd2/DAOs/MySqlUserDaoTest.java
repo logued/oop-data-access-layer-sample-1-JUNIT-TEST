@@ -1,7 +1,7 @@
 package com.dkit.oop.sd2.DAOs;
 // Note that for this test to work, the database must be created using the original SQL setup file.
 // and the relevant data must not have been changed.
-// Also, MySql server must be running. (XAMPP)      Mar 2024
+// Also, MySql server must be running. (XAMPP)      Jan 2025
 //
 
 import com.dkit.oop.sd2.DTOs.User;
