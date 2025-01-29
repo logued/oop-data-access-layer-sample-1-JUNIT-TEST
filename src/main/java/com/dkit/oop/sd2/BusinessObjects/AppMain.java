@@ -1,7 +1,7 @@
 package com.dkit.oop.sd2.BusinessObjects;
 
 /** OOP Feb 2022
- * This App demonstrates the use of a Data Access Object (DAO)
+ * This AppMain demonstrates the use of a Data Access Object (DAO)
  * to separate Business logic from Database specific logic.
  * It uses Data Access Objects (DAOs),
  * Data Transfer Objects (DTOs), and  a DAO Interface to define
@@ -23,7 +23,7 @@ import com.dkit.oop.sd2.DTOs.User;
 import com.dkit.oop.sd2.Exceptions.DaoException;
 import java.util.List;
 
-public class App
+public class AppMain
 {
     public static void main(String[] args)
     {
